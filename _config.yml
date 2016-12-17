@@ -1,0 +1,8 @@
+name: John Nunemaker
+author: John Nunemaker
+markdown: kramdown
+highlighter: rouge
+exclude: ["script", "Gemfile", "Gemfile.lock"]
+permalink: /:title/
+timezone: America/Indiana/Indianapolis
+title: Fewer and Faster
