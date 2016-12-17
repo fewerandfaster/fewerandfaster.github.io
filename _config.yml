@@ -6,3 +6,4 @@ exclude: ["script", "Gemfile", "Gemfile.lock"]
 permalink: /:title/
 timezone: America/Indiana/Indianapolis
 title: Fewer and Faster
+tagline: Measure, Improve and Repeat
