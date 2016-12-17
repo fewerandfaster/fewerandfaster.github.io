@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+#/ Usage: new
+#/
+#/ Create a new post.
+#/
+#/ Examples:
+#/
+#/   new
+#/
+require "yaml"
+require "fileutils"
+
+def ask(message)
+  print message
+  STDIN.gets.chomp
+end
+
+title = ask("title # ")
+file_name = title.gsub(/[^\w]/, '-').squeeze('-').downcase
+article = YAML.dump({"title" => title, "layout" => "post"})
+article << "---\n\n"
+path = "_drafts/#{file_name}.md"
+FileUtils.mkdir_p(File.dirname(path))
+unless File.exist?(path)
+	File.open(path, "w") do |file|
+		file.write article
+	end
+  puts "A new article was created at #{path}."
+else
+  puts "There was an error creating the article, #{path} already exists."
+end
+exit

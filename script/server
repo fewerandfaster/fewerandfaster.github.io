@@ -1,0 +1,13 @@
+#!/bin/sh
+# Run this thing.
+#
+# Usage:
+#   server
+#   open http://localhost:4000
+
+set -e
+cd $(dirname "$0")/..
+
+script/bootstrap && bundle exec jekyll serve --watch --drafts
+exit=$?
+exit $exit
