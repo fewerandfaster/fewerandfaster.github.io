@@ -85,8 +85,8 @@ h2 {
   background-image: url('images/flipper.svg');
 }
 
-.product-soon .product-image {
-  background-image: url('images/soon.png');
+.product-speaker-deck .product-image {
+  background-image: url('images/speaker-deck.png');
 }
 
 .product-title {
@@ -131,11 +131,11 @@ h2 {
   font-weight: 500;
 }
 
-.person, .product {
+.person, .product, .btn {
   transition: all 0.2s ease;
 }
 
-.person:hover, .product:hover {
+.person:hover, .product:hover, .btn:hover {
   transform: scale(1.05);
 }
 
@@ -149,11 +149,12 @@ h2 {
   background-image: linear-gradient(24deg, #EE0979 11%, #FF5858 100%);
   border-radius: 6px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.25rem;
   padding: 0 2rem;
   line-height: 2.5rem;
   text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 10px 40px;
 }
 
 .btn:hover {
