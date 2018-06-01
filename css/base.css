@@ -1,0 +1,221 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html, body {
+  min-height: 100vh;
+  color: #1F293F;
+  background-color: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-weight: 500;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 2.7rem;
+  line-height: 1;
+  vertical-align: middle;
+  color: #1F293F;
+}
+
+h1::before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-image: url('images/fewer-faster-mark.svg');
+  background-size: contain;
+  background-position: center;
+  margin: 0 1rem 0 0;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.products {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.product {
+  flex: 1 1 auto;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 10px 40px;
+  margin: 0 20px 20px;
+  padding: 1rem 1.5rem 1.15rem calc(2rem + 92px);
+  color: #1F293F;
+  position: relative;
+  background-color: #fff;
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: calc(92px + 1rem);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.product-flipper .product-image {
+  background-image: url('images/flipper.svg');
+}
+
+.product-soon .product-image {
+  background-image: url('images/soon.png');
+}
+
+.product-title {
+  line-height: 1;
+  margin-bottom: 0.45rem;
+}
+
+.product-description {
+  color: #737B8D;
+}
+
+.people {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.person {
+  margin: 0 1rem 1rem 0;
+  text-align: center;
+  padding: 0 1rem;
+  flex: 0 1 auto;
+  text-decoration: none;
+}
+
+.person-avatar {
+  width: 64px;
+  height: 64px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 10px 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+}
+
+.person-avatar img {
+  width: 64px;
+  height: 64px;
+}
+
+.person-handle {
+  color: #1F293F;
+  font-weight: 500;
+}
+
+.person, .product {
+  transition: all 0.2s ease;
+}
+
+.person:hover, .product:hover {
+  transform: scale(1.05);
+}
+
+.buttons {
+  padding: 1rem 0 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-image: linear-gradient(24deg, #EE0979 11%, #FF5858 100%);
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0 2rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.ethos {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.ethos p, .ethos ul, .ethos ol {
+  color: #737B8D;
+  margin-bottom: 1rem;
+}
+
+.ethos ul, .ethos ol {
+  margin-left: 2rem;
+}
+
+.ethos li {
+  margin-bottom: 0.5rem;
+}
+
+.ethos h2 {
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #1F293F;
+}
+
+a {
+  color: #FF5858;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EE0979;
+}
+
+@media only screen and (max-width: 660px) {
+  .container {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1:before {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  .person {
+    padding: 0;
+  }
+}
