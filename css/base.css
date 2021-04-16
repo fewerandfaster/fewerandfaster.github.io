@@ -14,7 +14,7 @@ html, body {
 }
 
 .container {
-  max-width: 780px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 3rem 0;
   display: flex;
